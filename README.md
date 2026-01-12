@@ -24,7 +24,7 @@ Still in progress — backend integration, authentication, and deployment coming
 | Feature              | Technology                         |
 | -------------------- | ---------------------------------- |
 | Frontend             | React with Vite                    |
-| UI                   | CSS / (your styling lib if any)    |
+| UI                   | CSS                                |
 | State                | React Hooks                        |
 | Linting & Formatting | ESLint, Prettier                   |
 | Backend              | Separate repo: *ecommerce-backend* |
