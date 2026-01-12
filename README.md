@@ -17,7 +17,7 @@ It allows users to:
 
 -See dynamic cart totals
 
-Still in progress — backend integration, authentication, and deployment coming soon.
+Still in progress — backend integration and deployment coming soon.
 
 ## Tech Stack
 
