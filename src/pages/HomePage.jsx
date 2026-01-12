@@ -5,20 +5,26 @@ import './homepage.css';
 
 export function HomePage() {
     const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         //Get data from backend
         axios.get('http://localhost:3000/api/products')
             .then((response) => {
                 setProducts(response.data)
-            })
+            });
+
+        axios.get('http://localhost:3000/api/cart-items')
+            .then((response) => {
+                setCart(response.data);
+            });
     }, []);
 
     return (
         <>
             <title>Sage & Stone</title>
 
-            <Header />
+            <Header cart={cart} />
 
             <div className="home-page">
                 <div className="products-grid">
