@@ -9,10 +9,11 @@ export function HomePage({ cart }) {
 
     useEffect(() => {
         //Get product data from backend
-        axios.get('/api/products')
-            .then((response) => {
-                setProducts(response.data)
-            });
+        const getHomeData = async () => {
+            const response = await axios.get('/api/products');
+            setProducts(response.data);
+        };
+        getHomeData();
 
     }, []);
 
