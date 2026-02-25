@@ -20,6 +20,7 @@ export function HomePage({ cart }) {
 
     return (
         <>
+            <link rel="icon" type="image/svg+xml" href="../../../public/hlogomark - green.svg" />
             <title>Sage & Stone</title>
 
             <Header cart={cart} />

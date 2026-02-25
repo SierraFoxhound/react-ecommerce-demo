@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { HomePage } from './pages/home_path/HomePage';
 import { CheckoutPage } from './pages/checkout/CheckoutPage';
 import { OrdersPage } from './pages/ordersFolder/OrdersPage';
-import { TrackingPage } from './pages/TrackingPage';
+import { TrackingPage } from './pages/trackingfolder/TrackingPage';
 import './App.css';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
         <Route index element={<HomePage cart={cart} />} />
         <Route path="checkout" element={<CheckoutPage cart={cart} />} />
         <Route path="orders" element={<OrdersPage cart={cart} />} />
-        <Route path="Tracking" element={<TrackingPage />} />
+        <Route path="tracking" element={<TrackingPage cart={cart} />} />
       </Routes>
 
 
