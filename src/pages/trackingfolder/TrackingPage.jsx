@@ -7,7 +7,7 @@ export function TrackingPage({ cart }) {
 
     return (
         <>
-            <link rel="icon" type="images/svg+xml" href="../public/tracking-favicon.png" />
+            <link rel="icon" type="images/svg+xml" href="../../assets/images/icons/tracking-favicon.png" />
             <title>Tracking</title>
 
             <Header cart={cart} />

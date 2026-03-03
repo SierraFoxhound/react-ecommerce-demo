@@ -5,6 +5,7 @@ import { HomePage } from './pages/home_path/HomePage';
 import { CheckoutPage } from './pages/checkout/CheckoutPage';
 import { OrdersPage } from './pages/ordersFolder/OrdersPage';
 import { TrackingPage } from './pages/trackingfolder/TrackingPage';
+import { PageNotFound } from './pages/errorfolder/PageNotFound';
 import './App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="checkout" element={<CheckoutPage cart={cart} />} />
         <Route path="orders" element={<OrdersPage cart={cart} />} />
         <Route path="tracking" element={<TrackingPage cart={cart} />} />
+        <Route path="*" element={<PageNotFound cart={cart} />} />
       </Routes>
 
 

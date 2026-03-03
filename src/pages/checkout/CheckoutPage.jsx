@@ -24,7 +24,7 @@ export function CheckoutPage({ cart }) {
 
     return (
         <>
-            <link rel="icon" type="image/svg+xml" href="../../../public/cart-favicon.png" />
+            <link rel="icon" type="image/svg+xml" href="../../assets/images/icons/cart-favicon.png" />
             <title>Checkout</title>
 
             <CheckoutHeader cart={cart} />
