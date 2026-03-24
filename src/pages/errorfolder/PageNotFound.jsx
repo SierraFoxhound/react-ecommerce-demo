@@ -5,6 +5,7 @@ export function PageNotFound({ cart }) {
 
     return (
         <>
+
             <title>404 Page Not Found</title>
 
             <Header cart={cart} />
