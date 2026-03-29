@@ -41,7 +41,6 @@ export function Product({ product, loadCart }) {
                 {formatMoney(product.priceCents)}
             </div>
 
-            //This uses the useState and the const above that targets the value
             <div className="product-quantity-container">
                 <select value={quantity} onChange={selectQuantity}>
                     <option value="1">1</option>
