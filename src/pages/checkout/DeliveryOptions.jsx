@@ -23,7 +23,8 @@ export function DeliveryOptions({ cartItem, deliveryOptions, loadCart }) {
                 };
 
                 return (
-                    <div key={deliveryOption.id} className="delivery-option"
+                    <div key={deliveryOption.id}
+                        className="delivery-option"
                         onClick={updateDeliveryOption}>
                         <input type="radio"
                             checked={deliveryOption.id === cartItem.deliveryOptionId}
