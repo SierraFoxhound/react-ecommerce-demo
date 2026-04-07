@@ -63,6 +63,12 @@ export function Product({ product, loadCart }) {
                 Added
             </div>
 
+            {addToCart.quantity === 1 && (
+                <p style={{ textAlign: 'center', color: 'green' }}>
+                    Added to cart!
+                </p>
+            )}
+
             <button className="add-to-cart-button button-primary"
                 onClick={addToCart}>
                 Add to Cart
