@@ -23,7 +23,7 @@ export function CheckoutPage({ cart, loadCart }) {
 
     useEffect(() => {
         const fetchPaymentSummary = async () => {
-            const response = await axios.get('api/payment-summary');
+            const response = await axios.get('/api/payment-summary');
             setPaymentSummary(response.data);
         };
         fetchPaymentSummary();
