@@ -8,6 +8,9 @@ import { TrackingPage } from './pages/trackingfolder/TrackingPage';
 import { PageNotFound } from './pages/errorfolder/PageNotFound';
 import './App.css';
 
+window.axios = axios;
+
+
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -24,6 +27,7 @@ function App() {
 
   return (
     <>
+      console.log(axios.post('/api/reset'));
       <Routes>
         <Route index element={<HomePage cart={cart} loadCart={loadCart} />} />
         <Route path="checkout" element={<CheckoutPage cart={cart} loadCart={loadCart} />} />
