@@ -19,7 +19,6 @@ export function Header({ cart }) {
 
 
     const searchProducts = () => {
-        console.log(search);
         navigate(`/?search=${search}`);
     }
 
