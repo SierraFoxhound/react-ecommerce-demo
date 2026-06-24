@@ -57,6 +57,14 @@ describe('Product component', () => {
         ).toBeInTheDocument();
     });
 
+    it('selects a quantity', () => {
+        render(<Product product={product} loadcart={loadCart} />)
+
+        const quantitySelector = screen.getByTestId('product-quantity-container');
+
+        expect(quantitySelector).toHaveValue('1');
+    });
+
     it('adds a product to the cart', async () => {
 
         render(<Product product={product} loadCart={loadCart} />);
