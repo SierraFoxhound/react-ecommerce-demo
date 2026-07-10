@@ -42,8 +42,17 @@ describe('PaymentSummary Component', () => {
         ).toBeInTheDocument();
 
         expect(
+            within(screen.getByTestId('payment-summary-shipping-cost'))
+                .getByText('$0.00')
+        ).toBeInTheDocument();
+
+        expect(
             screen.getByText('Total before tax:')
         ).toBeInTheDocument();
+
+        expect(
+
+        )
 
         expect(
             screen.getByText('Estimated tax (10%):')
