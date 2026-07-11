@@ -74,4 +74,12 @@ describe('PaymentSummary Component', () => {
         ).toBeInTheDocument();
 
     });
+
+    it('checkout the cart and goes to orders', async () => {
+        <MemoryRouter>
+            <PaymentSummary paymentSummary={paymentSummary} loadcart={loadCart}/>
+        </MemoryRouter>
+
+
+    });
 });
