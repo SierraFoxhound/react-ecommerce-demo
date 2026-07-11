@@ -51,11 +51,26 @@ describe('PaymentSummary Component', () => {
         ).toBeInTheDocument();
 
         expect(
-
-        )
+            within(screen.getByTestId('payment-summary-total-before-tax'))
+            .getByText('$20.67')
+        ).toBeInTheDocument();
 
         expect(
             screen.getByText('Estimated tax (10%):')
+        ).toBeInTheDocument();
+
+        expect(
+            within(screen.getByTestId('payment-summary-tax'))
+            .getByText('$2.07')
+        ).toBeInTheDocument();
+
+        expect(
+            screen.getByText('Order total:')
+        ).toBeInTheDocument();
+
+        expect(
+            within(screen.getByTestId('payment-summary-total'))
+            .getByText('$22.74')
         ).toBeInTheDocument();
 
     });
