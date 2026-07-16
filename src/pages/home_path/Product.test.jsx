@@ -6,7 +6,7 @@ import { Product } from './Product';
 
 vi.mock('axios');
 
-describe('Product component', () => {
+describe('Product Component', () => {
     //brought in from the product.json/js
     let product;
 

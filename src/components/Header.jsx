@@ -39,7 +39,9 @@ export function Header({ cart }) {
     return (
         <>
             <div className="header">
-                <div className="left-section">
+                <div className="left-section"
+                    data-testId="left-section"
+                >
                     <NavLink to="/" className="header-link">
                         <img className="logo"
                             src="images/logo-white.png" />
